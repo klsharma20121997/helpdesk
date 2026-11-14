@@ -1,3 +1,7 @@
 window.HELPDESK_CONFIG = Object.freeze({
-  apiBaseUrl: 'http://localhost:5210'
+  apiBaseUrl: 'https://www.api.parvatyatra.com'
 });
+
+// window.HELPDESK_CONFIG = Object.freeze({
+//   apiBaseUrl: 'http://localhost:5210'
+// });
