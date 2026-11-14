@@ -34,7 +34,7 @@ The provided SQL schema seeds roles and lookup values, but deliberately does not
 6. Serve `index.html`, `CustomerDashboard.html`, `SupportDashboard.html`, and `helpdesk-config.js` from the same directory and open `index.html`.
 
 ## API endpoints used
-Customer: `GET/PUT /api/profile/{userId}`, `GET /api/tickets`, `POST /api/tickets`, `GET /api/tickets/{ticketId}?userId=...`, `POST /api/tickets/{ticketId}/messages`. Customer replies with files use `multipart/form-data` with `authorUserId`, `messageText`, and one or more `attachments` fields; message details should return each attachment's `fileName`, `contentType`, and `url`.
+Customer: `GET/PUT /api/profile/{userId}`, `GET /api/tickets`, `POST /api/tickets`, `GET /api/tickets/{ticketId}?userId=...`, `POST /api/tickets/{ticketId}/messages`.
 Staff page: `GET /api/profile/{userId}` to identify the staff role; `GET /api/admin/tickets` for tickets (filtered by `assignedStaffUserId` for Support), `PUT /api/admin/tickets/{ticketId}` for status updates and Admin-only priority/assignment changes, and `GET/POST /api/admin/staff` for Admin team management. Replies use the existing messages endpoint.
 
 ## Important security note
